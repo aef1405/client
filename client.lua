@@ -27,7 +27,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 5, 0, 5)
-    Window.Size = UDim2.new(0, 500, 0, 80)
+    Window.Size = UDim2.new(0, 230, 0, 80)
     Window.ZIndex = 2
     
     Outline_A.Name = "Outline_A"
@@ -35,7 +35,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Outline_A.BackgroundColor3 = middledebug.OutlineColor
     Outline_A.BorderSizePixel = 0
     Outline_A.Position = UDim2.new(0, 0, 0, 25)
-    Outline_A.Size = UDim2.new(0, 500, 0, 2)
+    Outline_A.Size = UDim2.new(0, 230, 0, 2)
     Outline_A.ZIndex = 5
     
     WindowTitle.Name = "WindowTitle"
@@ -45,7 +45,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowTitle.BorderSizePixel = 0
     WindowTitle.Position = UDim2.new(0, 8, 0, 2)
-    WindowTitle.Size = UDim2.new(0, 488, 0, 22)
+    WindowTitle.Size = UDim2.new(0, 222, 0, 22)
     WindowTitle.ZIndex = 4
     WindowTitle.Font = Enum.Font.GothamSemibold
     WindowTitle.Text = nofdebug.Title
@@ -60,7 +60,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowDescription.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowDescription.BorderSizePixel = 0
     WindowDescription.Position = UDim2.new(0, 8, 0, 34)
-    WindowDescription.Size = UDim2.new(0, 472, 0, 40)
+    WindowDescription.Size = UDim2.new(0, 216, 0, 40)
     WindowDescription.ZIndex = 4
     WindowDescription.Font = Enum.Font.GothamSemibold
     WindowDescription.Text = nofdebug.Description
@@ -75,7 +75,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             local script = Instance.new('LocalScript', ambientShadow)
         
             ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
-            Window.Size = UDim2.new(0, 480, 0, 80)
+            Window.Size = UDim2.new(0, 230, 0, 80)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
@@ -88,7 +88,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         coroutine.wrap(ORBHB_fake_script)()
     elseif SelectedType == "image" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
-        Window.Size = UDim2.new(0, 480, 0, 80)
+        Window.Size = UDim2.new(0, 230, 0, 80)
         WindowTitle.Position = UDim2.new(0, 24, 0, 2)
         local ImageButton = Instance.new("ImageButton")
         ImageButton.Parent = Window
@@ -117,7 +117,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         coroutine.wrap(ORBHB_fake_script)()
     elseif SelectedType == "option" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 110), "Out", "Linear", 0.2)
-        Window.Size = UDim2.new(0, 480, 0, 100)
+        Window.Size = UDim2.new(0, 230, 0, 100)
         local Uncheck = Instance.new("ImageButton")
         local Check = Instance.new("ImageButton")
         
